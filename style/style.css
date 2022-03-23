@@ -1,0 +1,424 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.wrap {
+  width: 1002px;
+  margin: 0px auto;
+}
+
+.head-top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 4px 0px;
+  background-color: rgb(246, 246, 246);
+}
+
+.head-top a {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.head-top img {
+  height: 16px;
+}
+
+.fbicon {
+  color: rgb(68, 96, 160);
+}
+
+.twittericon {
+  color: rgb(0, 170, 236);
+}
+
+.head {
+  height: 51px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  float: right;
+}
+
+.navbar > ul {
+  display: flex;
+  font-size: 14px;
+  width: 218px;
+  justify-content: space-between;
+  justify-items: center;
+  padding-right: 20px;
+}
+
+.navbar ul > li > ul {
+  width: 120px;
+  flex-direction: column;
+  position: fixed;
+  margin-top: 17px;
+  display: none;
+}
+
+.navbar ul > li > ul > li {
+  background-color: white;
+  padding: 15px 0px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(0, 204, 153);
+  padding-top: 17px;
+  padding-bottom: 15px;
+}
+
+.navbar-bm {
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.navbar-bm:hover {
+  padding-left: 11px;
+  padding-right: 11px;
+  border-bottom: 3px solid rgb(0, 204, 153);
+}
+
+.bigpicture-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../images/big.png");
+  height: 346px;
+  font-size: 36px;
+  line-height: 48px;
+  justify-items: center;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.bigpicture-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../images/bg_index.png");
+  background-position: bottom;
+  height: 346px;
+  font-size: 36px;
+  line-height: 48px;
+  justify-items: center;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.bigpicture-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../images/bg_course.png");
+  background-position: bottom;
+  height: 346px;
+  font-size: 36px;
+  line-height: 48px;
+  justify-items: center;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.title-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 160px;
+  background-color: rgba(2, 2, 2, 0.15);
+}
+
+.title-bg-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 160px;
+  background-color: rgba(2, 2, 2, 0.4);
+}
+
+.title {
+  margin-left: 23px;
+}
+
+.content {
+  display: flex;
+  margin-bottom: 64px;
+}
+
+.course-item {
+  margin: 15px 15px 0px 15px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.course-item h3 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.course-item p {
+  width: 259px;
+  font-size: 15px;
+  text-align: justify;
+  line-height: 22px;
+}
+
+.compare h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+table {
+  font-size: 15px;
+  width: 840px;
+  margin: 0px auto;
+  margin-bottom: 61px;
+}
+
+table tr th {
+  padding-top: 8px;
+  padding-bottom: 12px;
+  font-weight: bold;
+  text-align: left;
+  background-color: rgb(247, 247, 247);
+  border-top: 1px solid rgb(221, 221, 221);
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+table tr td {
+  padding-top: 8px;
+  padding-bottom: 12px;
+  border-top: 1px solid rgb(221, 221, 221);
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+#good {
+  color: rgb(66, 179, 146);
+}
+
+.form-section {
+  height: 405px;
+  background: linear-gradient(rgb(0, 100, 75), rgb(0, 152, 114));
+}
+
+.form-section h3 {
+  padding-top: 38px;
+  padding-bottom: 32px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 24px;
+  color: white;
+}
+
+.form-bottom-section {
+  display: flex;
+}
+
+.space {
+  margin-left: 19px;
+  width: 460px;
+  height: 245px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.form {
+  color: white;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item {
+  margin-bottom: 12px;
+}
+
+.form-item input {
+  margin-top: 4px;
+  height: 30px;
+  width: 440px;
+  border-radius: 3px;
+}
+
+.btn input {
+  height: 32px;
+  width: 70px;
+  position: relative;
+  left: 380px;
+  top: 10px;
+  color: white;
+  background-color: rgb(0, 204, 153);
+  border: 1px solid rgb(0, 204, 153);
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 26px;
+  padding-left: 21px;
+  padding-bottom: 54px;
+  position: relative;
+}
+
+.mailandtel ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 38px;
+  position: absolute;
+  right: 15px;
+}
+
+.mailandtel ul li span {
+  color: rgb(225, 45, 128);
+}
+
+.go-top {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0.5;
+}
